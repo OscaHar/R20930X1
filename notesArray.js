@@ -1,0 +1,1 @@
+// Skapa object med TITLE, CONTENT och ID properties, gör en arraylist.
