@@ -8,6 +8,10 @@ app.get('/', (req, res) => {
     res.send('Hello World!')
 })
 
+app.get('/notes', (req, res) => {
+    res.sendFile(path.join(__dirname + '/notes.html'));
+})
+
 app.get('*', (req, res) => {
 
     res.sendFile(path.join(__dirname + '/error.html'));
