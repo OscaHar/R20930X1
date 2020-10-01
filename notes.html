@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <script type="text/javascript">
+        var notes, nLength, text, i; 
+        notes = ["Note One", "Note Two", "Note Three"];
+        nLength = notes.length;
+        text = "<ul>"
+
+        window.onload = function WindowLoad (event) {
+            alert("Page is loaded");
+            document.getElementById("demo").innerHTML = notes;
+
+            for (i = 0; i < nLength; i++) {
+                text += "<li>" + notes[i] + "</li>";
+            }
+            text += "</ul>";
+        }
+        </script>
+    </head>
+    <body>
+        <p id="demo"></p>
+    </body>
+</html>
